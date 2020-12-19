@@ -1,0 +1,34 @@
+class Mahasiswa :
+    #Deklarasi variabel
+    Biodata = ''
+    Nama    = ''
+    Nim     = ''
+    Jurusan = ''
+    #constructor
+    def __init__(self,Biodata):
+        self.Biodata = Biodata
+    #Method untuk menginput data variabel nama
+    def get_Nama(self,Nama):
+        self.Nama=Nama
+    # Method untuk menginput data variabel NIM
+    def get_Nim(self,Nim):
+        self.Nim =Nim
+    # Method untuk menginput data variabel nama
+    def get_Jurusan(self,Jurusan):
+        self.Jurusan =Jurusan
+    # Method untuk mencetak keseluruhan
+    def cetak_hasil(self):
+        print("\n\n\n***\n"+self.Biodata)
+        print("Nama    : "+self.Nama)
+        print("NIM : "+self.Nim)
+        print("Jurusan : "+self.Jurusan)
+
+#instance
+w=Mahasiswa('BIODATA MAHASISWA')
+var_Nama=input("Nama : ")
+var_Nim=input("NIM   : ")
+var_Jurusan=input("Jurusan : ")
+w.get_Nama(var_Nama)
+w.get_Nim(var_Nim)
+w.get_Jurusan(var_Jurusan)
+w.cetak_hasil()
